@@ -1,11 +1,15 @@
 <?php
-$sliderImg1="..\img\img2.png";
-$sliderImg2="..\img\img3.png";
-$sliderImg3="..\img\img4.png";
-
+$sliderImg1="..\img\img1.jpg";
+$sliderImg2="..\img\img2.jpg";
+$sliderImg3="..\img\img3.jpg";
+$sliderImg4="..\img\img4.jpg";
+$sliderImg5="..\img\img5.jpg";
+$sliderImg6="..\img\img6.jpg";
+$sliderImg7="..\img\img7.jpg";
 ?>
 
 <!-- Sliders -->
+<div class="card mx-auto" style="width: 80rem;">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -14,13 +18,13 @@ $sliderImg3="..\img\img4.png";
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img class="d-block w-100" src="<?php echo"$sliderImg1";?>" alt="First slide">
+      <img class="d-block w-100" src="<?php echo"$sliderImg4";?>" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="<?php echo"$sliderImg2";?>" alt="Second slide">
+      <img class="d-block w-100" src="<?php echo"$sliderImg5";?>" alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-100" src="<?php echo"$sliderImg3";?>" alt="Third slide">
+      <img class="d-block w-100" src="<?php echo"$sliderImg6";?>" alt="Third slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -32,3 +36,5 @@ $sliderImg3="..\img\img4.png";
     <span class="sr-only">Next</span>
   </a>
 </div>
+</div>
+
