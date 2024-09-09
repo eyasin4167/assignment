@@ -1,31 +1,23 @@
-<?php
-$sliderImg1="..\img\img1.jpg";
-$sliderImg2="..\img\img2.jpg";
-$sliderImg3="..\img\img3.jpg";
-$sliderImg4="..\img\img4.jpg";
-$sliderImg5="..\img\img5.jpg";
-$sliderImg6="..\img\img6.jpg";
-$sliderImg7="..\img\img7.jpg";
-?>
+<?php include_once 'UserFunction\databaseConnect.php'; ?>
 
 <!-- Sliders -->
 <div class="card mx-auto" style="width: 80rem;">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+<?php if(isset($slides) && is_array($slides) && count($slides) > 0){
+
+ foreach($slides as $key => $slide){  
+?>
+  <li data-target="#carouselExampleIndicators" data-slide-to="<?= $key;?>" class="active"></li>
+    <?php } ?>
   </ol>
   <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="<?php echo"$sliderImg4";?>" alt="First slide">
+    <?php foreach($slides as $key => $slide){  ?>
+    <div class="carousel-item <?= ($key == 0) ? 'active' : ''; ?>">
+      <img class="d-block w-100" src="<?= $slide['path']; ?>" alt="<?= $slide['description']; ?>">
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="<?php echo"$sliderImg5";?>" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="<?php echo"$sliderImg6";?>" alt="Third slide">
-    </div>
+<?php } ?>
+    
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -36,5 +28,8 @@ $sliderImg7="..\img\img7.jpg";
     <span class="sr-only">Next</span>
   </a>
 </div>
+<?php 
+}else{
+  $slides=[];
+}?>
 </div>
-
