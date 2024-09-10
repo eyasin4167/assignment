@@ -1,27 +1,6 @@
-
 <?php 
-include_once 'UserFunction\databaseConnect.php'; 
-
-// $groups=[
-//     [
-//       'path' => "..\img\img7.jpg",
-//       'description' => " Image slide 1"
-//     ],
-//     [
-//         'card_title' => "We are Group of ACE",
-//         'group_description' => "Are you eligible for blood donation? Find out
-//                 about the eligibility </br> requirements to donate blood today. 
-//                 Learn about general health,</br> travel, medications, tattoos, and more."
-//       ],
-//   ];
-
-//   if($groups){
-//     echo "<pre>";
-//     print_r($groups);
-//     echo "<pre>";
-//   }else{
-//     echo "No data found";
-//   }
+//config 
+include_once $_SERVER['DOCUMENT_ROOT'] . '/config.php'; 
 ?>
 
 
@@ -56,7 +35,7 @@ include_once 'UserFunction\databaseConnect.php';
                 <i><?= $group['note1']; ?></i></br>
             </svg>
         </p>
-        <a href="#" class="btn btn-primary mt-4">See More</a>
+        <a href="#" class="btn btn-primary">See More</a>
     </div>
   </div>
   <?php 

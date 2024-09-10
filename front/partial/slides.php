@@ -1,7 +1,7 @@
-<?php include_once 'UserFunction\databaseConnect.php'; ?>
+<?php include_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';?>
 
 <!-- Sliders -->
-<div class="card mx-auto" style="width: 80rem;">
+<div class="card mx-auto" style="width: 79rem;">
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
 <?php if(isset($slides) && is_array($slides) && count($slides) > 0){

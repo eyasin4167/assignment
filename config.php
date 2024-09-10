@@ -1,8 +1,11 @@
 <?php
-$sliderImg1="..\img\img1.jpg";
-$sliderImg2="..\img\img2.jpg";
-$sliderImg3="..\img\img3.jpg";
-$slides=[];
+//
+$docroot = $_SERVER['DOCUMENT_ROOT'];
+$webroot = "http://assignment.eyasin/";
+$public = $webroot . "public/";
+$bs4 = $webroot . "public/bs4/";
+$css = $webroot . "public/css/";
+$image = $webroot . "public/img/";
 
 //Database Configuration 
 $dsn = 'mysql:host=localhost;dbname=assingment';

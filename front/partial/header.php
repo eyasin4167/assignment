@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assingment</title>
-    <!-- Bootstrap CSS -->
-     <link  href="..\css\style.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
-     <!-- <link  href="..\css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Bootstrap / CSS -->
+     <link  href="<?= $css?>style.css" rel="stylesheet">
+     <link  href="<?=$bs4?>bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -20,7 +19,7 @@
     </div>
 
 <!-- Header -->
-    <header class="bg-primary text-white text-center py-4">
+    <header class="bg-primary text-white text-center py-1">
         <h1>Bangladesh Blood Donors Club</h1>
         <p>এখানে রক্ত সেবার মাধ্যেমে মানুষকে সাহায্যকরা হয়!</p>
     </header>
