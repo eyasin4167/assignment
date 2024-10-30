@@ -20,7 +20,6 @@
                       <a class="dropdown-item" href="#">AB– (AB negative)</a>
                       <a class="dropdown-item" href="#">O+ (O positive)</a>
                       <a class="dropdown-item" href="#">O– (O negative)</a>
-                      <a class="dropdown-item" href="#">A- (A negative)</a>
                     </div>
                     </div>
                 </li>

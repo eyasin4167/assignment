@@ -1,4 +1,5 @@
 <?php
+use App\slide;
 //config 
 include_once $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 // -- Header 
@@ -7,7 +8,22 @@ include_once 'partial\header.php';
 include_once 'partial\navBar.php';
 //-- Sliders 
 include_once 'partial\slides.php';
+
+include_once('../vendor/autoload.php');
+
+
+
+
+$slide = new slide();
+
+$record = $slide->getAllSlideRecords();
+
+var_dump($record);
+
+unset($slide);
+
 ?> 
+
 
 <!-- Main Content -->
   
