@@ -13,7 +13,7 @@
             <h6 class="m-0 font-weight-bold text-primary">Add New Slider</h6>
         </div>
         <div class="card-body">
-            <form action="" method="POST">
+            <form action="store.php" method="POST">
                 <div class="form-group">
                     <label for="path">Image Path</label>
                     <input type="file" class="form-control" id="path" name="path" accept="image/*">

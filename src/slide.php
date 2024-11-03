@@ -94,7 +94,7 @@ class slide{
 
         //build a object using the slide data
         $sql = 'INSERT INTO `slides` (path , description ) VALUES (:path , :description)';
-        $stmt = $this->pdo->prepare($sql);
+        $stmt = $this->conn->prepare($sql);
         $stmt->bindParam(':path', $data['path']);
         $stmt->bindParam(':description', $data['description']);
         return $stmt->execute();
